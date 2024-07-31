@@ -1,18 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Decbase</title>
 </head>
 
-<body>
-  <div id="app">
+<body class="page__body">
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo" href="/">
+        <img src='./public/images/logo.png' width="151" height="47" srcset="./public/images/logo_2x.png" alt='Logo'>
+      </a>
+      <nav class="nav">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#" class="header__link">SERVICES</a></li>
+          <li class="header__item"><a href="#" class="header__link">ABOUT</a></li>
+          <li class="header__item"><a href="#" class="header__link">BLOG</a></li>
+          <li class="header__item"><a href="#" class="header__link">SHOP</a></li>
+          <li class="header__item"><a href="#" class="header__link">CONTACT</a></li>
+        </ul>
+        <button class="button button--menu" aria-label="sign up">Sign Up</button>
+      </nav>
+    </div>
+  </header>
 
-  </div>
-  <script type="module" src="./public/src/js/main.js"></script>
+  <section class="section--r promo">
+    <div class="container promo__container">
+      <div class="promo__content">
+        <h2 class="title promo__title">
+          MODERN INTERIOR
+        </h2>
+        <p class="subtitle promo__subtitle">
+          Create Your
+          Interior Design.
+        </p>
+        <p class="promo__text">
+          Every corner, wall, and piece of furniture is an opportunity to express your personality and style. Whether
+          you prefer a minimalist look, a vintage vibe, or an eclectic mix, interior design allows you to create a space
+          that is uniquely yours.
+        </p>
+        <a class="button promo__button" href="#">Contact</a>
+      </div>
+      <div class="section-img promo__img">
+        <img src='./public/images/hero.jpg' alt='Design Interior'>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="./public/js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+.promo {
+  position: relative;
+  margin-top: 9.4rem;
+  margin-bottom: 16rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    width: 214px;
+    height: 163px;
+    object-fit: contain;
+    background: url("../images/dots.svg") center center no-repeat;
+  }
+}
+
+.promo__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4.4rem;
+  align-items: center;
+}
+
+.promo__content {
+  max-width: 600px;
+}
+
+.promo__text {
+  margin-bottom: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 167%;
+}
+
+.promo__button {
+}
+
+.section-img {
+}
+
+.promo__img {
+}

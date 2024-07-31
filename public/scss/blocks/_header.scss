@@ -1,0 +1,58 @@
+.header {
+  padding-top: 3.4rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.header__link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: $color-subtitle;
+  transition: $main-trs;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.logo {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset;
+  }
+}
