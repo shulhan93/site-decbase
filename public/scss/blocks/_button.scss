@@ -43,3 +43,31 @@
     background-color: $color-second;
   }
 }
+
+.slider-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border: none;
+  transition: $main-trs;
+  cursor: pointer;
+
+  svg {
+    stroke: $color-text;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $color-second;
+
+      svg {
+        stroke: #fff;
+      }
+    }
+  }
+}

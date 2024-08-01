@@ -1,0 +1,87 @@
+.service {
+}
+.service__container {
+}
+.title {
+}
+.subtitle {
+}
+.service__slider {
+}
+.service__slider-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  gap: 3.7rem;
+}
+.service__slider-btns {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: flex-end;
+}
+.service__slider-btn {
+}
+
+.service__item {
+  position: relative;
+  padding: 4rem 2rem;
+  padding-left: 9.7rem;
+  border-radius: 6rem 0;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.14);
+  background: #fff;
+  transition: $main-trs;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 37px;
+    width: 40px;
+    height: 40px;
+    transition: filter 0.3s ease;
+  }
+
+  &--interier::before {
+    background: url("../../images/services/interior.png") center center / cover no-repeat;
+  }
+
+  &--arch::before {
+    background: url("../../images/services/architect.png") center center / cover no-repeat;
+  }
+
+  &--plan::before {
+    background: url("../../images/services/plan.png") center center / cover no-repeat;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $color-primary;
+
+      &::before {
+        filter: invert(1);
+      }
+
+      .service__item-title {
+        color: #fff;
+      }
+
+      .service__item-description {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.service__item-title {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: $color-subtitle;
+  transition: $main-trs;
+}
+
+.service__item-description {
+  font-size: 1.8rem;
+  line-height: 156%;
+  letter-spacing: -0.01em;
+  transition: $main-trs;
+}
