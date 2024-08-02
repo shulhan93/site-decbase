@@ -26,9 +26,14 @@
 }
 
 .promo__text {
+  flex-grow: 1;
   margin-bottom: 2.8rem;
   font-size: 1.8rem;
   line-height: 167%;
+}
+
+.promo__img {
+  flex-shrink: 0;
 }
 
 .promo__subtitle {

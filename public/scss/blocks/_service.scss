@@ -1,24 +1,32 @@
 .service {
+  position: relative;
+  padding-bottom: 20.4rem;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 212px;
+    height: 153px;
+    background: url("../../images/dots.svg") center center no-repeat;
+  }
 }
-.service__container {
-}
-.title {
-}
-.subtitle {
-}
+
 .service__slider {
+  overflow: hidden;
+  margin: 25px -20px;
+  padding: 20px 20px;
 }
-.service__slider-wrapper {
-  margin-top: 4rem;
-  display: flex;
-  gap: 3.7rem;
-}
+
 .service__slider-btns {
   display: flex;
   gap: 1.8rem;
   justify-content: flex-end;
 }
+
 .service__slider-btn {
+  margin-bottom: 3rem;
 }
 
 .service__item {
