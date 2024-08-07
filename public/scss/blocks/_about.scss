@@ -1,0 +1,56 @@
+.about {
+  padding-bottom: 15rem;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: url("../images/dots.svg") center center no-repeat;
+    width: 212px;
+    height: 153px;
+  }
+}
+
+.about__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 3rem;
+  margin-bottom: 13rem;
+}
+
+.about__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__years {
+  flex-basis: 528px;
+}
+
+.about__year {
+  background: url("../images/wood.jpg") center center no-repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20rem;
+  font-weight: 700;
+}
+
+.about__img {
+  flex-shrink: 1;
+}
+
+.about__content {
+  margin-top: 6rem;
+  flex-basis: 543px;
+  flex-shrink: 1;
+}
+
+.about__description {
+  margin-bottom: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 167%;
+}
