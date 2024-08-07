@@ -1,0 +1,84 @@
+.achievements {
+  position: relative;
+  padding-top: 8.7rem;
+  padding-bottom: 10rem;
+  background-color: $color-bg;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 212px;
+    height: 153px;
+    background: url("../../images/dots.svg") center center no-repeat;
+  }
+
+  &__subtitle {
+    max-width: 830px;
+  }
+}
+
+.achievements__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.achievements__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 278px;
+}
+
+.achievements__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  flex-direction: column;
+  justify-content: center;
+  width: 18.5rem;
+  height: 18.2rem;
+  border-radius: 4rem 0;
+  box-shadow: 0 13px 16px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+
+  &:nth-child(even) {
+    align-self: flex-end;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 99%;
+    top: 50%;
+    width: 218px;
+    height: 95px;
+    background: url("../../images/line.svg") center center / contain no-repeat;
+  }
+
+  &:nth-child(2):after {
+    top: 0;
+    background: url("../../images/line-r.svg") center center / contain no-repeat;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.achievements__count {
+  color: $color-subtitle;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 120%;
+}
+
+.achievements__name {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 167%;
+}

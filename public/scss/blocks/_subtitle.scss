@@ -5,4 +5,8 @@
   font-size: 4.8rem;
   line-height: 108%;
   color: $color-subtitle;
+
+  &--center {
+    text-align: center;
+  }
 }
