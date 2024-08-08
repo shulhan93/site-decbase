@@ -1,0 +1,36 @@
+.subscribe {
+  padding: 15rem 0;
+}
+
+.subscribe__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribe__text {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  max-width: 647px;
+  text-align: center;
+  line-height: 156%;
+}
+
+.subscribe__form {
+  position: relative;
+  max-width: 772px;
+  width: 100%;
+  display: flex;
+}
+
+.subscribe__label {
+  width: 100%;
+}
+
+.subscribe__input {
+  width: 100%;
+  padding: 2rem 2.7rem;
+  background-color: $color-inp;
+  border: none;
+  border-radius: 2rem 0 0;
+}

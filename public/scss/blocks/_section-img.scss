@@ -25,17 +25,37 @@
     }
   }
 
-  &--sqrt::after {
-    border-radius: 0;
+  &--sm {
+    img {
+      border-radius: 10rem 0;
+    }
+
+    &::after {
+      border-radius: 10rem 0;
+    }
   }
 
-  &--left::after {
-    left: -35px;
-    bottom: 35px;
+  &--sqrt::after {
+    border-radius: 0;
   }
 
   &--right::after {
     right: -35px;
     bottom: -35px;
+  }
+
+  &--left-sm::after {
+    left: -16px;
+    bottom: 16px;
+  }
+
+  &--right-sm::after {
+    right: -16px;
+    bottom: -16px;
+  }
+
+  &--left::after {
+    left: -35px;
+    bottom: 35px;
   }
 }

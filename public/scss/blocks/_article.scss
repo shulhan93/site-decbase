@@ -1,0 +1,24 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 637px;
+  min-height: 645px;
+}
+
+.article__img {
+  max-width: 554px;
+  margin-bottom: 6rem;
+}
+
+.article__title {
+  margin-bottom: 1.7rem;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 93%;
+  color: $color-subtitle;
+}
+
+.article__description {
+  margin-bottom: auto;
+}

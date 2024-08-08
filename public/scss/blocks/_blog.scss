@@ -1,0 +1,26 @@
+.blog {
+  position: relative;
+  padding-top: 9.3rem;
+  padding-bottom: 12rem;
+  background-color: $color-bg;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+    width: 212px;
+    height: 153px;
+    background: url("../../images/dots.svg") center center no-repeat;
+  }
+}
+
+.blog__subtitle {
+  margin-bottom: 8rem;
+}
+
+.blog__wrapper {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+}

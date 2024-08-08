@@ -6,24 +6,20 @@
     padding-left: 65px;
   }
 }
+
 .testimonials__slider {
+  overflow: hidden;
+  padding: 35px;
+  margin: -35px;
 }
-.swiper-wrapper {
-}
+
 .testimonials__btns {
   margin-bottom: 8.6rem;
   display: flex;
   justify-content: flex-end;
   gap: 1.8rem;
 }
-.slider-btn {
-}
-.slider-btn-prev {
-}
-.slider-btn-next {
-}
-.swiper-slide {
-}
+
 .testimonials__item {
   padding-top: 5rem;
   padding-left: 10rem;
